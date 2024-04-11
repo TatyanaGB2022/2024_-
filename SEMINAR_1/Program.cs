@@ -40,17 +40,53 @@ else
 // a = 9, b = -3 => да
 // a = -3, b = 9 => нет
 
-System.Console.Write("Введите первое число: ");
-int firstNamber = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Введите первое число: ");
+// int firstNamber = Convert.ToInt32(Console.ReadLine());
 
-System.Console.Write("Введите второе число: ");
-int secondNamber = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Введите второе число: ");
+// int secondNamber = Convert.ToInt32(Console.ReadLine());
 
-if(firstNamber == secondNamber * secondNamber)
+// if(firstNamber == secondNamber * secondNamber)
+// {
+// Console.WriteLine("yes");
+// }
+// else
+// {
+//   Console.WriteLine("no");
+// }
+
+
+// System.Console.Write("Введите первое число: ");
+// int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+// System.Console.Write("Введите второе число: ");
+// int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+// if (firstNumber == secondNumber * secondNumber)
+// {
+// Console.WriteLine("a = " + firstNumber + ", b = " + secondNumber + " => да");
+// }
+// else
+// {
+// Console.WriteLine($"a = {firstNumber}, b = {secondNumber} => нет"); //или такой вариант
+// }
+
+// Задание 2. Совместная работа
+// Семинар 1. Знакомство с языками программирования
+// Напишите программу, которая на вход принимает
+// целое число N, а на выходе показывает все целые
+// числа в промежутке от -N до N.
+// Примеры
+// 4 => -4, -3, -2, -1, 0, 1, 2, 3, 4
+// 2 => -2, -1, 0, 1, 2
+
+
+System.Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int i = -number;
+while(i <= number) //когда переменная-счетчик станет больше, чем переменная number, то цикл остановится
 {
-Console.WriteLine("yes");
-}
-else
-{
-  Console.WriteLine("no");
+  System.Console.Write(i + " ");
+  i++;  //или i = i + 1 или i += 1
 }
