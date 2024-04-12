@@ -102,5 +102,32 @@ else
 918 => 17
 */
 
-System.Console.WriteLine(456 / 100);
-System.Console.WriteLine(456 % 10);
+// System.Console.WriteLine(456 / 100);
+// System.Console.WriteLine(456 % 10);
+// первое решение:
+// System.Console.Write("Введите число: ");
+// int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+// if(number > 99 && number < 1000)
+// {
+//   System.Console.WriteLine(number / 100 + number % 10);
+// }
+//  else
+//  {
+//   System.Console.WriteLine("Введено не трехзначное число!");
+//  }
+
+// второе решение
+
+System.Console.Write("Введите число: ");
+int number = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+if(number > 99 && number < 1000)
+{
+  int leftDigit = number / 100;
+  int rightDigit = number % 10;
+  int result = leftDigit + rightDigit;
+  System.Console.WriteLine(result);
+}
+ else
+ {
+  System.Console.WriteLine("Введено не трехзначное число!");
+ }
