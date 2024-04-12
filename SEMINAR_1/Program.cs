@@ -102,3 +102,5 @@ else
 918 => 17
 */
 
+System.Console.WriteLine(456 / 100);
+System.Console.WriteLine(456 % 10);
