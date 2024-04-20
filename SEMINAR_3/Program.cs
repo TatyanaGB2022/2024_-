@@ -181,3 +181,11 @@ for (int i = 0; i < array.Length; i++)
   System.Console.Write(array[i] + " ");
 }
 
+// /// генерация вещественного числа
+// Random rand = new Random();
+// double number = Math.Round(rand.Next(0, 10) + rand.NextDouble(), 3); // метод NextDouble будет всегда возвращать
+// число от 0 до 1 не включая 1
+//чтобы получить вещественное число не с нулевой целой частью, нужно к вещественному числу прибавить целое число. 
+// 3 это сколько цифр после запятой оставить
+
+// System.Console.WriteLine("Сгенерированное число: " + number);
