@@ -12,6 +12,16 @@ void Main()
   int[,] myMatrix = GenerateMatrix(row, column, 0, 9);
   PrintMatrix(myMatrix);
 
+  ChangeMatrix(myMatrix);
+  PrintMatrix(myMatrix);
+}
+
+void ChangeMatrix(int[,] matrix) //изменить матрицу. Записываем логику замены элементов у которых оба индекса четные
+{
+  for (int i = 0; i < matrix.GetLength(0); i += 2) //  i += 2 значит, что перемещение только по четным
+    for (int j = 0; j < matrix.GetLength(1); j += 2)
+      matrix[i, j] *= matrix[i, j];
+
 }
 
 void PrintMatrix(int[,] matrix)
@@ -24,6 +34,8 @@ void PrintMatrix(int[,] matrix)
     }
     System.Console.WriteLine();
   }
+
+  System.Console.WriteLine();
 }
 
 int[,] GenerateMatrix(int row, int col, int minRange, int maxRange)
